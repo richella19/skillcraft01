@@ -1,3 +1,58 @@
-https://github.com/user-attachments/assets/a8b69fd2-c52f-4bd2-8952-5fea0cf70a43
-pls copy this url and paste in google u may be able to view the video of my task
-Thank you:)
+The code for the task-01:
+
+print("----------------------------------------------------")
+print("🎯 Hello, Welcome to My Python Visualization Project!")
+print("👨‍💻 Intern:Richella.M")
+print("🏫 College: Rajalakshmi Institute of Technology")
+print("🏢 Internship Company: Skill Craft Learning")
+print("📅 Task 1 – Bar Chart & Histogram Visualization")
+print("----------------------------------------------------")
+print("💡 This script visualizes categorical and continuous data")
+print("   using matplotlib (Gender & Age distribution)")
+print("----------------------------------------------------\n")
+
+# ------------------------------------------------------------------------------
+# 👨‍💻 Intern: Rishan . N
+# 🏫 Rajalakshmi Institute of Technology
+# 🏢 Skill Craft Learning – Data Science Internship
+# Task 1: Visualizing Categorical & Continuous Data
+# ✅ Graphs Included:
+#   - Bar Chart: Gender Distribution (Categorical Variable)
+#   - Histogram: Age Distribution (Continuous Variable)
+# ------------------------------------------------------------------------------
+
+import matplotlib.pyplot as plt
+
+# ✅ Sample Data
+genders = ['Male', 'Female', 'Male', 'Female', 'Male', 'Female', 'Female', 'Male', 'Male', 'Female']
+ages = [21, 22, 23, 24, 21, 22, 25, 26, 27, 21, 22, 28, 29, 30, 23, 25, 26, 21, 24, 27]
+
+# 📊 Bar Chart – Gender Distribution
+gender_counts = {'Male': genders.count('Male'), 'Female': genders.count('Female')}
+plt.figure(figsize=(6, 4))
+plt.bar(gender_counts.keys(), gender_counts.values(), color=['royalblue', 'deeppink'], edgecolor='black')
+plt.title("Gender Distribution", fontsize=14, fontweight='bold')
+plt.xlabel("Gender")
+plt.ylabel("Count")
+plt.grid(axis='y', linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.show()
+
+# 📊 Histogram – Age Distribution
+plt.figure(figsize=(6, 4))
+plt.hist(ages, bins=6, color='mediumseagreen', edgecolor='black')
+plt.title("Age Distribution", fontsize=14, fontweight='bold')
+plt.xlabel("Age")
+plt.ylabel("Frequency")
+plt.grid(axis='y', linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.show()
+
+# ✅ Final Message
+print("\n🎉 Bar Chart and Histogram Created Successfully!")
+print("📊 Gender & Age Distribution Visualized")
+print("👨‍💻 Submitted by: Richella.M")
+print("🏫 Rajalakshmi Institute of Technology")
+print("🏢 Internship at: Skill Craft Learning")
+print("✅ Task 1 Completed Successfully!\n")
+print("🙏 Thank you for reviewing my project!")
